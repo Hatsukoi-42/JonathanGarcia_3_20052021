@@ -1,0 +1,102 @@
+/***********
+    GLOBAL
+*/
+$color-primary: #9356DC;
+$color-secondary: #FF79DA;
+$color-tertiary: #99E2D0;
+$color-grey: #353535;
+
+html {
+    font-family: "Roboto" ,sans-serif;
+    font-weight: 300;
+}
+
+h2 {    /*Police Primaire*/ 
+
+}
+h3 {    /*Police Secondaire*/
+
+}
+
+h4 {    /*Texte*/
+
+}
+
+/*
+    GLOBAL
+***********/
+
+
+/***********
+    HEADER
+*/
+header {
+    display: flex;
+    position: relative;
+    height: 4rem;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    a {
+        position: absolute;
+        left: 5%;
+        i {
+            font-size: 1.3rem;
+            color: $color-grey;
+        }
+    }
+    img {
+        height: 80%;
+        width: 45%;
+    }
+}
+/*
+    HEADER
+***********/
+
+
+/***********
+    FOOTER
+*/
+footer {
+    background-color: $color-grey;
+    padding: 1.5em;
+    color: white;
+
+    h5 {
+        padding-bottom: 0.8em;
+        font-family: "Shrikhand", serif;
+        font-size: 1.1rem;
+    }
+
+    a {
+        display: block;
+        position: relative;
+        padding: 0.3em 0;
+
+        &:nth-child(2),
+        &:nth-child(3) {
+            padding-left: 1.5em;
+            font-weight: 400;
+        }
+        &::before {
+            position: absolute;
+            left: 0;
+            font-family: "Font Awesome 5 Free";
+            font-size: 0.9em;
+            font-weight: 800;
+        }
+        &:nth-child(2)::before {
+            content: "\f2e7";
+        }
+        &:nth-child(3)::before {
+            content: "\f4c4";
+            font-size: 0.8em;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+}
+/*
+    FOOTER
+***********/
