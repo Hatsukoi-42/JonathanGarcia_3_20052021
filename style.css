@@ -1,4 +1,10 @@
 /*TMP*/
+header img {
+  width: auto;
+  height: auto;
+  -o-object-fit: inherit;
+  object-fit: inherit; }
+
 img {
   width: 100px;
   height: 100px;
