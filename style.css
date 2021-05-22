@@ -60,6 +60,25 @@ header {
     HEADER
 ***********/
 /***********
+    LOCALISATION
+*/
+.localisation {
+  background: -webkit-gradient(linear, left top, left bottom, from(#c0c0c0), color-stop(3%), to(#F6F6F6));
+  background: -webkit-linear-gradient(top, #c0c0c0, 3%, #F6F6F6);
+  background: -o-linear-gradient(top, #c0c0c0, 3%, #F6F6F6);
+  background: linear-gradient(to bottom, #c0c0c0, 3%, #F6F6F6);
+  padding: 1rem 0;
+  text-align: center; }
+  .localisation span {
+    font-weight: 500; }
+    .localisation span i {
+      padding-right: 1rem;
+      color: #353535; }
+
+/*
+    LOCALISATION
+***********/
+/***********
     FOOTER
 */
 footer {

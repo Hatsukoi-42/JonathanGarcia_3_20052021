@@ -67,6 +67,27 @@ header {
     HEADER
 ***********/
 
+/***********
+    LOCALISATION
+*/
+.localisation {
+    background: linear-gradient(to bottom, #c0c0c0, 3%, #F6F6F6);
+    padding: 1rem 0;
+    text-align: center;
+
+    span {
+        font-weight: 500;
+        
+        i {
+            padding-right: 1rem;
+            color: #353535;
+        }
+    }
+}
+/*
+    LOCALISATION
+***********/
+
 
 /***********
     FOOTER
