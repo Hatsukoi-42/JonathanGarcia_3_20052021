@@ -1,0 +1,159 @@
+/***********
+    LOCALISATION
+*/
+.localisation {
+  background: -webkit-linear-gradient(top, #afafaf, 1px, #EAEAEA);
+  background: -o-linear-gradient(top, #afafaf, 1px, #EAEAEA);
+  background: linear-gradient(to bottom, #afafaf, 1px, #EAEAEA);
+  padding: 1rem 0;
+  text-align: center; }
+  .localisation span {
+    font-weight: 500; }
+    .localisation span i {
+      padding-right: 1rem;
+      color: #353535; }
+
+/*
+    LOCALISATION
+***********/
+/***********
+    EXPLORATION
+*/
+.exploration {
+  font-size: 1rem;
+  padding: 2em 10%;
+  background-color: #F6F6F6;
+  text-align: center; }
+  .exploration h1 {
+    padding: 0 10%;
+    font-size: 1.4em;
+    font-weight: 800; }
+  .exploration span {
+    display: inline-block;
+    padding: 0.9em 0 1.8em; }
+  .exploration button {
+    margin-bottom: 1.5rem;
+    padding: 1em 1.5em;
+    border: none;
+    border-radius: 2em;
+    background: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), color-stop(50%), to(#9356DC));
+    background: -webkit-linear-gradient(top left, #FF79DA, 50%, #9356DC);
+    background: -o-linear-gradient(top left, #FF79DA, 50%, #9356DC);
+    background: linear-gradient(to bottom right, #FF79DA, 50%, #9356DC);
+    color: white; }
+
+/*
+    EXPLORATION
+***********/
+/***********
+    FONCTIONNEMENT
+*/
+.fonctionnement {
+  font-size: 1rem;
+  padding: 3em 5%; }
+  .fonctionnement h2 {
+    margin-bottom: 2rem; }
+  .fonctionnement div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    margin: 0.5em 0 0.5em 1em;
+    border-radius: 1.3em;
+    padding: 1.5em;
+    background-color: #F6F6F6;
+    -webkit-box-shadow: #dcdcdc 0 0.3em 0.5em;
+    box-shadow: #dcdcdc 0 0.3em 0.5em;
+    color: grey; }
+    .fonctionnement div:hover {
+      background-color: #F5EDFF;
+      color: #9356DC; }
+    .fonctionnement div span {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      position: absolute;
+      left: -10px;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+      height: 1.5rem;
+      width: 1.5rem;
+      border-radius: 1rem;
+      background-color: #9356DC;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      color: white; }
+    .fonctionnement div i {
+      position: absolute;
+      left: 2.2em;
+      font-size: 1.1em; }
+    .fonctionnement div p {
+      padding-left: 4em;
+      color: black;
+      font-weight: 500; }
+
+/*
+    FONCTIONNEMENT
+***********/
+/***********
+    RESTAURANTS
+*/
+.restaurants {
+  padding: 3rem 5%;
+  background-color: #F3F3F3;
+  font-size: 1rem; }
+
+.restau_container {
+  overflow: hidden;
+  position: relative;
+  -webkit-box-shadow: #dcdcdc 0 0.3em 0.5em;
+  box-shadow: #dcdcdc 0 0.3em 0.5em;
+  border-radius: 1em;
+  background-color: white;
+  margin: 1em 0;
+  padding-bottom: 1em; }
+  .restau_container img {
+    height: 10rem;
+    width: 100%; }
+  .restau_container strong {
+    position: absolute;
+    z-index: 2;
+    top: 0.7em;
+    right: 0.7em;
+    padding: 0.5em;
+    background-color: #99E2D0;
+    color: #139273;
+    font-size: 0.8em; }
+  .restau_container h4 {
+    padding: 0.7em 0 0.2em 1em; }
+  .restau_container span {
+    padding-left: 1rem; }
+  .restau_container i {
+    position: absolute;
+    right: 8%;
+    bottom: 15%;
+    font-size: 1.5em;
+    text-shadow: 0 0 #FFF, -2px 0 #000, 0 2px #000, 2px 0 #000, 0 -2px #000, -2px 0 #000;
+    color: transparent; }
+    .restau_container i:hover {
+      background: -webkit-gradient(linear, left top, left bottom, from(#e72c83), to(#a742c6));
+      background: -webkit-linear-gradient(top, #e72c83 0%, #a742c6 100%);
+      background: -o-linear-gradient(top, #e72c83 0%, #a742c6 100%);
+      background: linear-gradient(to bottom, #e72c83 0%, #a742c6 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      text-shadow: none;
+      -webkit-transition: 0.5s;
+      -o-transition: 0.5s;
+      transition: 0.5s; }
+
+/*
+    RESTAURANTS
+***********/

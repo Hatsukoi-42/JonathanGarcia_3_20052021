@@ -10,14 +10,15 @@ img {
     object-fit: cover;
 }
 
-
-/***********
-    GLOBAL
-*/
 $color-primary: #9356DC;
 $color-secondary: #FF79DA;
 $color-tertiary: #99E2D0;
 $color-grey: #353535;
+
+
+/***********
+    GLOBAL
+*/
 
 html {
     font-family: "Roboto" ,sans-serif;
@@ -68,193 +69,6 @@ header {
 /*
     HEADER
 ***********/
-
-
-/***********
-    LOCALISATION
-*/
-.localisation {
-    background: linear-gradient(to bottom, #afafaf, 1px, #EAEAEA);
-    padding: 1rem 0;
-    text-align: center;
-
-    span {
-        font-weight: 500;
-
-        i {
-            padding-right: 1rem;
-            color: #353535;
-        }
-    }
-}
-/*
-    LOCALISATION
-***********/
-
-
-/***********
-    EXPLORATION
-*/
-.exploration {
-    font-size: 1rem;
-    padding: 2em 10%;
-    background-color: #F6F6F6;
-    text-align: center;
-
-    h1 {
-        padding: 0 10%;
-        font-size: 1.4em;
-        font-weight: 800;
-    }
-
-    span {
-        display: inline-block;
-        padding: 0.9em 0 1.8em;
-    }
-
-    button {
-        margin-bottom: 1.5rem;
-        padding: 1em 1.5em;
-        border: none;
-        border-radius: 2em;
-        background: linear-gradient(to bottom right, $color-secondary, 50%, $color-primary);
-        color: white;
-    }
-}
-/*
-    EXPLORATION
-***********/
-
-
-/***********
-    FONCTIONNEMENT
-*/
-.fonctionnement {
-    font-size: 1rem;
-    padding: 3em 5%;
-
-    h2 {
-        margin-bottom: 2rem;
-    }
-
-    div {
-        display: flex;
-        position: relative;
-        margin: 0.5em 0 0.5em 1em;
-        border-radius: 1.3em;
-        padding: 1.5em;
-        background-color: #F6F6F6;
-        box-shadow: #dcdcdc 0 0.3em 0.5em;
-        color: grey;
-        &:hover {
-            background-color: #F5EDFF;
-            color: $color-primary;
-        }
-
-        span {
-            display: flex;
-            position: absolute;
-            left: -10px;
-            top: 50%;
-            transform: translateY(-50%);
-            height: 1.5rem;
-            width: 1.5rem;
-
-            border-radius: 1rem;
-            background-color: $color-primary;
-            justify-content: center;
-            align-items: center;
-            color: white;
-        }
-
-        i {
-            position: absolute;
-            left: 2.2em;
-            font-size: 1.1em;
-        }
-
-        p {
-            padding-left: 4em;
-            color: black;
-            font-weight: 500;
-        }
-    }
-}
-/*
-    FONCTIONNEMENT
-***********/
-
-
-/***********
-    RESTAURANTS
-*/
-.restaurants {
-    padding: 3rem 5%;
-    background-color: #F3F3F3;
-    font-size: 1rem;
-
-    h2 {
-
-    }
-}
-
-.restau_container {
-    overflow: hidden;
-    position: relative;
-    box-shadow: #dcdcdc 0 0.3em 0.5em;
-    border-radius: 1em;
-    background-color: white;
-    margin: 1em 0;
-    padding-bottom: 1em;
-
-    img {
-        height: 10rem;
-        width: 100%;
-        // object-position: 0% 80%; /*Faudrait créer une classe par image, mais actuellement flemme*/
-    }
-
-    strong {
-        position: absolute;
-        z-index: 2;
-        top: 0.7em;
-        right: 0.7em;
-        padding: 0.5em;
-        background-color: #99E2D0;
-        color: #139273;
-        font-size: 0.8em;
-    }
-
-    h4 {
-        padding: 0.7em 0 0.2em 1em;
-    }
-
-    span {
-        padding-left: 1rem;
-    }
-
-    i {
-        position: absolute;
-        right: 8%;
-        bottom: 15%;
-        font-size: 1.5em;
-        text-shadow: 0 0 #FFF, -2px 0 #000, 0 2px #000, 2px 0 #000, 0 -2px #000, -2px 0 #000;
-        color: transparent;
-        &:hover {
-            background: linear-gradient(to bottom, #e72c83 0%,#a742c6 100%);
-            background-clip: text;
-            color: transparent;
-            text-shadow: none;
-            transition: 0.5s;
-        }
-    }
-
-}
-/*
-    RESTAURANTS
-***********/
-
-
-
 
 
 /***********
