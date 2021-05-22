@@ -10,14 +10,6 @@ img {
     object-fit: cover;
 }
 
-/***********
-    
-*/
-
-/*
-    
-***********/
-
 
 /***********
     GLOBAL
@@ -41,7 +33,8 @@ h3 {    /*Police Secondaire*/
 }
 
 h4 {    /*Texte*/
-
+    font-size: 1.1rem;
+    font-weight: 800;
 }
 
 /*
@@ -189,6 +182,75 @@ header {
 }
 /*
     FONCTIONNEMENT
+***********/
+
+
+/***********
+    RESTAURANTS
+*/
+.restaurants {
+    padding: 3rem 5%;
+    background-color: #F3F3F3;
+    font-size: 1rem;
+
+    h2 {
+
+    }
+}
+
+.restau_container {
+    overflow: hidden;
+    position: relative;
+    box-shadow: #dcdcdc 0 0.3em 0.5em;
+    border-radius: 1em;
+    background-color: white;
+    margin: 1em 0;
+    padding-bottom: 1em;
+
+    img {
+        height: 10rem;
+        width: 100%;
+        // object-position: 0% 80%; /*Faudrait créer une classe par image, mais actuellement flemme*/
+    }
+
+    strong {
+        position: absolute;
+        z-index: 2;
+        top: 0.7em;
+        right: 0.7em;
+        padding: 0.5em;
+        background-color: #99E2D0;
+        color: #139273;
+        font-size: 0.8em;
+    }
+
+    h4 {
+        padding: 0.7em 0 0.2em 1em;
+    }
+
+    span {
+        padding-left: 1rem;
+    }
+
+    i {
+        position: absolute;
+        right: 8%;
+        bottom: 15%;
+        font-size: 1.5em;
+        text-shadow: 0 0 #FFF, -2px 0 #000, 0 2px #000, 2px 0 #000, 0 -2px #000, -2px 0 #000;
+        color: transparent;
+        &:hover {
+            background: linear-gradient(to bottom, #e72c83 0%,#a742c6 100%);
+            background-clip: text;
+            color: transparent;
+            text-shadow: none;
+            transition: 0.5s;
+        }
+    }
+
+}
+/*
+    RESTAURANTS
 ***********/
 
 

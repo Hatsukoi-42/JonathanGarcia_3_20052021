@@ -12,12 +12,6 @@ img {
   object-fit: cover; }
 
 /***********
-    
-*/
-/*
-    
-***********/
-/***********
     GLOBAL
 */
 html {
@@ -33,7 +27,9 @@ h3 {
   /*Police Secondaire*/ }
 
 h4 {
-  /*Texte*/ }
+  /*Texte*/
+  font-size: 1.1rem;
+  font-weight: 800; }
 
 /*
     GLOBAL
@@ -169,6 +165,62 @@ header {
 
 /*
     FONCTIONNEMENT
+***********/
+/***********
+    RESTAURANTS
+*/
+.restaurants {
+  padding: 3rem 5%;
+  background-color: #F3F3F3;
+  font-size: 1rem; }
+
+.restau_container {
+  overflow: hidden;
+  position: relative;
+  -webkit-box-shadow: #dcdcdc 0 0.3em 0.5em;
+  box-shadow: #dcdcdc 0 0.3em 0.5em;
+  border-radius: 1em;
+  background-color: white;
+  margin: 1em 0;
+  padding-bottom: 1em; }
+  .restau_container img {
+    height: 10rem;
+    width: 100%; }
+  .restau_container strong {
+    position: absolute;
+    z-index: 2;
+    top: 0.7em;
+    right: 0.7em;
+    padding: 0.5em;
+    background-color: #99E2D0;
+    color: #139273;
+    font-size: 0.8em; }
+  .restau_container h4 {
+    padding: 0.7em 0 0.2em 1em; }
+  .restau_container span {
+    padding-left: 1rem; }
+  .restau_container i {
+    position: absolute;
+    right: 8%;
+    bottom: 15%;
+    font-size: 1.5em;
+    text-shadow: 0 0 #FFF, -2px 0 #000, 0 2px #000, 2px 0 #000, 0 -2px #000, -2px 0 #000;
+    color: transparent; }
+    .restau_container i:hover {
+      background: -webkit-gradient(linear, left top, left bottom, from(#e72c83), to(#a742c6));
+      background: -webkit-linear-gradient(top, #e72c83 0%, #a742c6 100%);
+      background: -o-linear-gradient(top, #e72c83 0%, #a742c6 100%);
+      background: linear-gradient(to bottom, #e72c83 0%, #a742c6 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      text-shadow: none;
+      -webkit-transition: 0.5s;
+      -o-transition: 0.5s;
+      transition: 0.5s; }
+
+/*
+    RESTAURANTS
 ***********/
 /***********
     FOOTER
