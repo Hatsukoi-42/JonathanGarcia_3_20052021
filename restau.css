@@ -1,0 +1,18 @@
+img {
+  width: 100%;
+  height: 15rem; }
+
+.menu-container {
+  position: relative;
+  margin-top: -2rem;
+  border-radius: 2rem 2rem 0 0;
+  background-color: #F6F6F6;
+  padding: 2em 1em; }
+  .menu-container h3 {
+    display: inline-block; }
+  .menu-container i {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    float: right;
+    padding-right: 1rem; }

@@ -120,7 +120,9 @@
   padding-bottom: 1em; }
   .restau_container img {
     height: 10rem;
-    width: 100%; }
+    width: 100%;
+    -o-object-position: 0% 70%;
+    object-position: 0% 70%; }
   .restau_container strong {
     position: absolute;
     z-index: 2;
@@ -139,20 +141,31 @@
     right: 8%;
     bottom: 15%;
     font-size: 1.5em;
-    text-shadow: 0 0 #FFF, -2px 0 #000, 0 2px #000, 2px 0 #000, 0 -2px #000, -2px 0 #000;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
     color: transparent; }
     .restau_container i:hover {
-      background: -webkit-gradient(linear, left top, left bottom, from(#e72c83), to(#a742c6));
-      background: -webkit-linear-gradient(top, #e72c83 0%, #a742c6 100%);
-      background: -o-linear-gradient(top, #e72c83 0%, #a742c6 100%);
-      background: linear-gradient(to bottom, #e72c83 0%, #a742c6 100%);
+      background: -webkit-gradient(linear, left bottom, right top, from(#e72c83), to(#a742c6));
+      background: -webkit-linear-gradient(bottom left, #e72c83 0%, #a742c6 100%);
+      background: -o-linear-gradient(bottom left, #e72c83 0%, #a742c6 100%);
+      background: linear-gradient(to top right, #e72c83 0%, #a742c6 100%);
       -webkit-background-clip: text;
       background-clip: text;
-      color: transparent;
-      text-shadow: none;
-      -webkit-transition: 0.5s;
-      -o-transition: 0.5s;
-      transition: 0.5s; }
+      -webkit-animation: heart 3s;
+      animation: heart 3s;
+      -webkit-text-stroke-width: 0; }
+
+@-webkit-keyframes heart {
+  from {
+    opacity: 0%; }
+  to {
+    opacity: 100%; } }
+
+@keyframes heart {
+  from {
+    opacity: 0%; }
+  to {
+    opacity: 100%; } }
 
 /*
     RESTAURANTS
