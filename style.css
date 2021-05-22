@@ -12,6 +12,12 @@ img {
   object-fit: cover; }
 
 /***********
+    
+*/
+/*
+    
+***********/
+/***********
     GLOBAL
 */
 html {
@@ -19,7 +25,9 @@ html {
   font-weight: 300; }
 
 h2 {
-  /*Police Primaire*/ }
+  /*Police Primaire*/
+  font-size: 1.5rem;
+  font-weight: 700; }
 
 h3 {
   /*Police Secondaire*/ }
@@ -105,6 +113,60 @@ header {
 
 /*
     EXPLORATION
+***********/
+/***********
+    FONCTIONNEMENT
+*/
+.fonctionnement {
+  font-size: 1rem;
+  padding: 3em 5%; }
+  .fonctionnement div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    margin: 0.5em 0 0.5em 1em;
+    border-radius: 1.3em;
+    padding: 1.5em;
+    background-color: #F6F6F6;
+    -webkit-box-shadow: #dcdcdc 0 0.3em 0.5em;
+    box-shadow: #dcdcdc 0 0.3em 0.5em;
+    color: grey; }
+    .fonctionnement div:hover {
+      background-color: #F5EDFF;
+      color: #9356DC; }
+    .fonctionnement div span {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      position: absolute;
+      left: -10px;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+      height: 1.5rem;
+      width: 1.5rem;
+      border-radius: 1rem;
+      background-color: #9356DC;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      color: white; }
+    .fonctionnement div i {
+      position: absolute;
+      left: 2.2em;
+      font-size: 1.1em; }
+    .fonctionnement div p {
+      padding-left: 4em;
+      color: black;
+      font-weight: 500; }
+
+/*
+    FONCTIONNEMENT
 ***********/
 /***********
     FOOTER
