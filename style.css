@@ -63,10 +63,9 @@ header {
     LOCALISATION
 */
 .localisation {
-  background: -webkit-gradient(linear, left top, left bottom, from(#c0c0c0), color-stop(3%), to(#F6F6F6));
-  background: -webkit-linear-gradient(top, #c0c0c0, 3%, #F6F6F6);
-  background: -o-linear-gradient(top, #c0c0c0, 3%, #F6F6F6);
-  background: linear-gradient(to bottom, #c0c0c0, 3%, #F6F6F6);
+  background: -webkit-linear-gradient(top, #afafaf, 1px, #EAEAEA);
+  background: -o-linear-gradient(top, #afafaf, 1px, #EAEAEA);
+  background: linear-gradient(to bottom, #afafaf, 1px, #EAEAEA);
   padding: 1rem 0;
   text-align: center; }
   .localisation span {
@@ -77,6 +76,35 @@ header {
 
 /*
     LOCALISATION
+***********/
+/***********
+    EXPLORATION
+*/
+.exploration {
+  font-size: 1rem;
+  padding: 2em 10%;
+  background-color: #F6F6F6;
+  text-align: center; }
+  .exploration h1 {
+    padding: 0 10%;
+    font-size: 1.4em;
+    font-weight: 800; }
+  .exploration span {
+    display: inline-block;
+    padding: 0.9em 0 1.8em; }
+  .exploration button {
+    margin-bottom: 1.5rem;
+    padding: 1em 1.5em;
+    border: none;
+    border-radius: 2em;
+    background: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), color-stop(50%), to(#9356DC));
+    background: -webkit-linear-gradient(top left, #FF79DA, 50%, #9356DC);
+    background: -o-linear-gradient(top left, #FF79DA, 50%, #9356DC);
+    background: linear-gradient(to bottom right, #FF79DA, 50%, #9356DC);
+    color: white; }
+
+/*
+    EXPLORATION
 ***********/
 /***********
     FOOTER

@@ -67,17 +67,18 @@ header {
     HEADER
 ***********/
 
+
 /***********
     LOCALISATION
 */
 .localisation {
-    background: linear-gradient(to bottom, #c0c0c0, 3%, #F6F6F6);
+    background: linear-gradient(to bottom, #afafaf, 1px, #EAEAEA);
     padding: 1rem 0;
     text-align: center;
 
     span {
         font-weight: 500;
-        
+
         i {
             padding-right: 1rem;
             color: #353535;
@@ -86,6 +87,40 @@ header {
 }
 /*
     LOCALISATION
+***********/
+
+
+/***********
+    EXPLORATION
+*/
+.exploration {
+    font-size: 1rem;
+    padding: 2em 10%;
+    background-color: #F6F6F6;
+    text-align: center;
+
+    h1 {
+        padding: 0 10%;
+        font-size: 1.4em;
+        font-weight: 800;
+    }
+
+    span {
+        display: inline-block;
+        padding: 0.9em 0 1.8em;
+    }
+    
+    button {
+        margin-bottom: 1.5rem;
+        padding: 1em 1.5em;
+        border: none;
+        border-radius: 2em;
+        background: linear-gradient(to bottom right, $color-secondary, 50%, $color-primary);
+        color: white;
+    }
+}
+/*
+    EXPLORATION
 ***********/
 
 
