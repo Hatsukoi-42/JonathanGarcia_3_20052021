@@ -1,7 +1,28 @@
+@-webkit-keyframes heart {
+  from {
+    opacity: 0%; }
+  to {
+    opacity: 100%; } }
+
+@keyframes heart {
+  from {
+    opacity: 0%; }
+  to {
+    opacity: 100%; } }
+
+/***********
+    IMAGE PRINCIPALE
+*/
 img {
   width: 100%;
   height: 15rem; }
 
+/*
+    IMAGE PRINCIPALE
+***********/
+/***********
+    NOM RESTAU + BOX + BOUTON
+*/
 .menu-container {
   position: relative;
   margin-top: -2rem;
@@ -10,9 +31,114 @@ img {
   padding: 2em 1em; }
   .menu-container h3 {
     display: inline-block; }
-  .menu-container i {
+  .menu-container > i {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     float: right;
-    padding-right: 1rem; }
+    padding-right: 1rem;
+    font-size: 1.5em;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    color: transparent; }
+    .menu-container > i:hover {
+      background: -webkit-gradient(linear, left bottom, right top, from(#FF79DA), to(#9356DC));
+      background: -webkit-linear-gradient(bottom left, #FF79DA 0%, #9356DC 100%);
+      background: -o-linear-gradient(bottom left, #FF79DA 0%, #9356DC 100%);
+      background: linear-gradient(to top right, #FF79DA 0%, #9356DC 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-animation: heart 1s;
+      animation: heart 1s;
+      -webkit-text-stroke-width: 0; }
+  .menu-container button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 3rem;
+    width: 50%;
+    margin: 2rem auto;
+    border: none;
+    border-radius: 2rem;
+    background: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
+    background: -webkit-linear-gradient(top left, #FF79DA 0%, #9356DC 100%);
+    background: -o-linear-gradient(top left, #FF79DA 0%, #9356DC 100%);
+    background: linear-gradient(to bottom right, #FF79DA 0%, #9356DC 100%);
+    color: white;
+    font-size: 0.95em;
+    font-weight: 500; }
+
+/*
+    NOM RESTAU + BOX + BOUTON
+***********/
+/***********
+    CATEGORIE PLAT + LISTE
+*/
+.menu-card h2 {
+  position: relative;
+  margin-top: 1.8em;
+  font-weight: 400;
+  font-size: 1rem;
+  padding-bottom: 0.4em; }
+  .menu-card h2::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 40px;
+    font-size: 1px;
+    border-bottom: #99E2D0 solid 3px; }
+
+.menu-card_plat {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1rem;
+  margin-top: 0.7em;
+  background-color: white;
+  border-radius: 1rem;
+  -webkit-box-shadow: #e6e6e6 0 0.3em 0.5em;
+  box-shadow: #e6e6e6 0 0.3em 0.5em; }
+  .menu-card_plat div {
+    width: 100%;
+    padding: 0.7em 0.6em; }
+    .menu-card_plat div h4 {
+      font-weight: 600; }
+    .menu-card_plat div span {
+      font-size: 0.9em;
+      font-weight: 400; }
+    .menu-card_plat div strong {
+      float: right;
+      font-weight: bold;
+      font-size: 0.9em; }
+  .menu-card_plat:hover i {
+    width: 20%;
+    color: white;
+    -webkit-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s; }
+  .menu-card_plat i {
+    width: 0%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-radius: 0 1rem 1rem 0;
+    background-color: #99E2D0;
+    color: transparent;
+    font-size: 1.3rem;
+    cursor: pointer; }
+
+/*
+    CATEGORIE PLAT + LISTE
+***********/

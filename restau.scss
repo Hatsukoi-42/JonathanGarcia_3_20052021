@@ -3,11 +3,43 @@ $color-secondary: #FF79DA;
 $color-tertiary: #99E2D0;
 $color-grey: #353535;
 
+@keyframes heart {
+    from {
+        opacity: 0%;
+    }
+    to {
+        opacity: 100%;
+    }
+}
+@mixin heart {
+    font-size: 1.5em;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    color: transparent;
+    &:hover {
+        background: linear-gradient(to top right, $color-secondary 0%,$color-primary 100%);
+        background-clip: text;
+        animation: heart 1s;
+        -webkit-text-stroke-width: 0;
+    }
+}
+
+
+/***********
+    IMAGE PRINCIPALE
+*/
 img {
     width: 100%;
     height: 15rem;
 }
+/*
+    IMAGE PRINCIPALE
+***********/
 
+
+/***********
+    NOM RESTAU + BOX + BOUTON
+*/
 .menu-container {
     position: relative;
     margin-top: -2rem;
@@ -17,19 +49,105 @@ img {
     
     h3 {
         display: inline-block;
-        // &::after {
-        //     content: "\f004";
-        //     font-family: "Font Awesome 5 Free";
-        //     font-weight: 900;
-        //     float: right;
-        //     padding-right: 1rem;
-        // }
     }
 
-    i {
+    & > i {
         display: flex;
         float: right;
         padding-right: 1rem;
+        @include heart;
+    }
+
+    button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        height: 3rem;
+        width: 50%;
+        margin: 2rem auto;
+
+        border: none;
+        border-radius: 2rem;
+        background: linear-gradient(to bottom right, $color-secondary 0%,$color-primary 100%);
+
+        color: white;
+        font-size: 0.95em;
+        font-weight: 500;
+    }
+}
+/*
+    NOM RESTAU + BOX + BOUTON
+***********/
+
+
+/***********
+    CATEGORIE PLAT + LISTE
+*/
+.menu-card {
+    h2 {
+        position: relative;
+        margin-top: 1.8em;
+        font-weight: 400;
+        font-size: 1rem;
+        padding-bottom: 0.4em;
+
+        &::before {
+            content:"";
+            position: absolute;
+            bottom: 0;
+            width: 40px;
+            font-size: 1px;
+            border-bottom: $color-tertiary solid 3px;
+        }
     }
 }
 
+.menu-card_plat {
+    display: flex;
+    font-size: 1rem;
+    margin-top: 0.7em;
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: #e6e6e6 0 0.3em 0.5em;
+
+    div {
+        width: 100%;
+        padding: 0.7em 0.6em;
+
+        h4 {
+            font-weight: 600;
+        }
+        span {
+            font-size: 0.9em;
+            font-weight: 400;
+        }
+        strong {
+            float: right;
+            font-weight: bold;
+            font-size: 0.9em;
+        }
+    }
+
+    &:hover {
+        i {
+            width: 20%;
+            color: white;
+            transition: 1s;
+        }
+    }
+    i {
+        width: 0%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0 1rem 1rem 0;
+        background-color: $color-tertiary;
+        color: transparent;
+        font-size: 1.3rem;
+        cursor: pointer;
+    }
+}
+/*
+    CATEGORIE PLAT + LISTE
+***********/

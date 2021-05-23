@@ -1,3 +1,15 @@
+@-webkit-keyframes heart {
+  from {
+    opacity: 0%; }
+  to {
+    opacity: 100%; } }
+
+@keyframes heart {
+  from {
+    opacity: 0%; }
+  to {
+    opacity: 100%; } }
+
 /***********
     LOCALISATION
 */
@@ -63,11 +75,11 @@
     padding: 1.5em;
     background-color: #F6F6F6;
     -webkit-box-shadow: #dcdcdc 0 0.3em 0.5em;
-    box-shadow: #dcdcdc 0 0.3em 0.5em;
-    color: grey; }
+    box-shadow: #dcdcdc 0 0.3em 0.5em; }
     .fonctionnement div:hover {
-      background-color: #F5EDFF;
-      color: #9356DC; }
+      background-color: #F5EDFF; }
+      .fonctionnement div:hover i {
+        color: #9356DC; }
     .fonctionnement div span {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -92,10 +104,10 @@
     .fonctionnement div i {
       position: absolute;
       left: 2.2em;
-      font-size: 1.1em; }
+      font-size: 1.1em;
+      color: grey; }
     .fonctionnement div p {
       padding-left: 4em;
-      color: black;
       font-weight: 500; }
 
 /*
@@ -145,27 +157,15 @@
     -webkit-text-stroke-color: black;
     color: transparent; }
     .restau_container i:hover {
-      background: -webkit-gradient(linear, left bottom, right top, from(#e72c83), to(#a742c6));
-      background: -webkit-linear-gradient(bottom left, #e72c83 0%, #a742c6 100%);
-      background: -o-linear-gradient(bottom left, #e72c83 0%, #a742c6 100%);
-      background: linear-gradient(to top right, #e72c83 0%, #a742c6 100%);
+      background: -webkit-gradient(linear, left bottom, right top, from(#FF79DA), to(#9356DC));
+      background: -webkit-linear-gradient(bottom left, #FF79DA 0%, #9356DC 100%);
+      background: -o-linear-gradient(bottom left, #FF79DA 0%, #9356DC 100%);
+      background: linear-gradient(to top right, #FF79DA 0%, #9356DC 100%);
       -webkit-background-clip: text;
       background-clip: text;
-      -webkit-animation: heart 3s;
-      animation: heart 3s;
+      -webkit-animation: heart 1s;
+      animation: heart 1s;
       -webkit-text-stroke-width: 0; }
-
-@-webkit-keyframes heart {
-  from {
-    opacity: 0%; }
-  to {
-    opacity: 100%; } }
-
-@keyframes heart {
-  from {
-    opacity: 0%; }
-  to {
-    opacity: 100%; } }
 
 /*
     RESTAURANTS

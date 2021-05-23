@@ -3,6 +3,28 @@ $color-secondary: #FF79DA;
 $color-tertiary: #99E2D0;
 $color-grey: #353535;
 
+@keyframes heart {
+    from {
+        opacity: 0%;
+    }
+    to {
+        opacity: 100%;
+    }
+}
+@mixin heart {
+    font-size: 1.5em;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    color: transparent;
+    &:hover {
+        background: linear-gradient(to top right, $color-secondary 0%,$color-primary 100%);
+        background-clip: text;
+        animation: heart 1s;
+        -webkit-text-stroke-width: 0;
+    }
+}
+
+
 /***********
     LOCALISATION
 */
@@ -78,10 +100,11 @@ $color-grey: #353535;
         padding: 1.5em;
         background-color: #F6F6F6;
         box-shadow: #dcdcdc 0 0.3em 0.5em;
-        color: grey;
         &:hover {
             background-color: #F5EDFF;
-            color: $color-primary;
+            i {
+                color: $color-primary;
+            }
         }
 
         span {
@@ -104,11 +127,11 @@ $color-grey: #353535;
             position: absolute;
             left: 2.2em;
             font-size: 1.1em;
+            color: grey;
         }
 
         p {
             padding-left: 4em;
-            color: black;
             font-weight: 500;
         }
     }
@@ -125,10 +148,6 @@ $color-grey: #353535;
     padding: 3rem 5%;
     background-color: #F3F3F3;
     font-size: 1rem;
-
-    h2 {
-
-    }
 }
 
 .restau_container {
@@ -169,28 +188,7 @@ $color-grey: #353535;
         position: absolute;
         right: 8%;
         bottom: 15%;
-        font-size: 1.5em;
-        // text-shadow: 0 0 #FFF, -2px 0 #000, 0 2px #000, 2px 0 #000, 0 -2px #000, -2px 0 #000;
-        -webkit-text-stroke-width: 1px;
-        -webkit-text-stroke-color: black;
-        color: transparent;
-
-        &:hover {
-            background: linear-gradient(to top right, #e72c83 0%,#a742c6 100%);
-            background-clip: text;
-            animation: heart 3s;
-            -webkit-text-stroke-width: 0;
-        }
-    }
-
-}
-
-@keyframes heart {
-    from {
-        opacity: 0%;
-    }
-    to {
-        opacity: 100%;
+        @include heart;
     }
 }
 
