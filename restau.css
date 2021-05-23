@@ -62,7 +62,7 @@ img {
     -ms-flex-align: center;
     align-items: center;
     height: 3rem;
-    width: 50%;
+    width: 10rem;
     margin: 2rem auto;
     border: none;
     border-radius: 2rem;
@@ -105,17 +105,35 @@ img {
   -webkit-box-shadow: #e6e6e6 0 0.3em 0.5em;
   box-shadow: #e6e6e6 0 0.3em 0.5em; }
   .menu-card_plat div {
+    position: relative;
     width: 100%;
-    padding: 0.7em 0.6em; }
+    padding: 0.7em 0.6em;
+    white-space: nowrap;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis; }
     .menu-card_plat div h4 {
-      font-weight: 600; }
+      font-weight: 600;
+      overflow: hidden;
+      -o-text-overflow: ellipsis;
+      text-overflow: ellipsis; }
     .menu-card_plat div span {
+      display: inline;
       font-size: 0.9em;
       font-weight: 400; }
-    .menu-card_plat div strong {
-      float: right;
-      font-weight: bold;
-      font-size: 0.9em; }
+  .menu-card_plat strong {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    padding: 0 1em 0.7em;
+    font-weight: bold;
+    font-size: 0.9em; }
   .menu-card_plat:hover i {
     width: 20%;
     color: white;

@@ -64,7 +64,7 @@ img {
         align-items: center;
 
         height: 3rem;
-        width: 50%;
+        width: 10rem;
         margin: 2rem auto;
 
         border: none;
@@ -112,21 +112,33 @@ img {
     box-shadow: #e6e6e6 0 0.3em 0.5em;
 
     div {
+        position: relative;
         width: 100%;
         padding: 0.7em 0.6em;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
 
         h4 {
             font-weight: 600;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
         span {
+            display: inline;
             font-size: 0.9em;
             font-weight: 400;
         }
-        strong {
-            float: right;
-            font-weight: bold;
-            font-size: 0.9em;
-        }
+        
+    }
+    
+    strong {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        padding: 0 1em 0.7em;
+        font-weight: bold;
+        font-size: 0.9em;
     }
 
     &:hover {
