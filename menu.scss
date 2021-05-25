@@ -28,6 +28,24 @@ $color-grey: #353535;
 /***********
     LOADER
 */
+@keyframes loader-scroll {
+    0% {
+        height: 100vh;
+        overflow: hidden;
+    }
+    99% {
+        height: 100vh;
+        overflow: hidden;
+    }
+    100% {
+        height: auto;
+        overflow: inherit;
+    }
+}
+
+.loader-scroll {
+    animation: loader-scroll 3s;
+}
 
 @keyframes loader-opacity {
     0% {
@@ -44,7 +62,7 @@ $color-grey: #353535;
     }
 }
 
-@keyframes spin {
+@keyframes loader-spin {
     0% {
         transform: rotate(0deg);
     }
@@ -52,7 +70,6 @@ $color-grey: #353535;
         transform: rotate(360deg);
     }
 }
-
 
 .loader-container * {
     box-sizing: content-box;
@@ -94,7 +111,7 @@ $color-grey: #353535;
             border: lightgrey solid 6px;
             &:after {
                 content:"";
-                animation: spin 1s linear 0s infinite;
+                animation: loader-spin 1s linear 0s infinite;
                 position: absolute;
                 top: -6px; left: -6px; bottom: -6px; right: -6px;
                 width: 50px; height: 50px;
