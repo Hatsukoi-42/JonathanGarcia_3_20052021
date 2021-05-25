@@ -26,6 +26,92 @@ $color-grey: #353535;
 
 
 /***********
+    LOADER
+*/
+
+@keyframes loader-opacity {
+    0% {
+        opacity: 90%;
+        z-index: 5;
+    }
+    99% {
+        opacity: 90%;
+        z-index: 5;
+    }
+    100% {
+        opacity: 0%;
+        z-index: -1;
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+.loader-container * {
+    box-sizing: content-box;
+}
+
+.loader-container {
+    animation: loader-opacity 3s both;
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    z-index: 5;
+
+    span {
+        display: flex;
+        align-items: center;
+        font-size: 1.5rem;
+        font-weight: bold;
+        opacity: 100%;
+        i {
+            position: relative;
+        }
+        .loader {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            border: lightgrey solid 6px;
+            border-radius: 50px;
+            margin-right: 1rem;
+        }
+        .loader-quart {
+            position: relative;
+            width: 50px;
+            height: 50px;
+            border-radius: 50px;
+            border: lightgrey solid 6px;
+            &:after {
+                content:"";
+                animation: spin 1s linear 0s infinite;
+                position: absolute;
+                top: -6px; left: -6px; bottom: -6px; right: -6px;
+                width: 50px; height: 50px;
+                border: transparent solid 6px;
+                border-top: grey solid 6px;
+                border-radius: 50px;
+            }
+        }
+
+    }
+}
+/*
+    LOADER
+***********/
+
+
+/***********
     LOCALISATION
 */
 .localisation {
@@ -70,10 +156,17 @@ $color-grey: #353535;
     button {
         margin-bottom: 1.5rem;
         padding: 1em 1.5em;
+        box-shadow: #bbbbbb 0 0.3em 0.5em;
         border: none;
         border-radius: 2em;
         background: linear-gradient(to bottom right, $color-secondary, 50%, $color-primary);
         color: white;
+        cursor: pointer;
+        &:hover {
+            opacity: 85%;
+            box-shadow: #979797 0 0.3em 0.5em;
+            transition: opacity 0.5s;
+        }
     }
 }
 /*

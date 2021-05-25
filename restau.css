@@ -64,15 +64,25 @@ img {
     height: 3rem;
     width: 10rem;
     margin: 2rem auto;
+    -webkit-box-shadow: #bbbbbb 0 0.3em 0.5em;
+    box-shadow: #bbbbbb 0 0.3em 0.5em;
     border: none;
     border-radius: 2rem;
     background: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
     background: -webkit-linear-gradient(top left, #FF79DA 0%, #9356DC 100%);
     background: -o-linear-gradient(top left, #FF79DA 0%, #9356DC 100%);
     background: linear-gradient(to bottom right, #FF79DA 0%, #9356DC 100%);
+    cursor: pointer;
     color: white;
     font-size: 0.95em;
     font-weight: 500; }
+    .menu-container button:hover {
+      opacity: 85%;
+      -webkit-box-shadow: #979797 0 0.3em 0.5em;
+      box-shadow: #979797 0 0.3em 0.5em;
+      -webkit-transition: opacity 0.5s;
+      -o-transition: opacity 0.5s;
+      transition: opacity 0.5s; }
 
 /*
     NOM RESTAU + BOX + BOUTON
@@ -135,7 +145,7 @@ img {
     font-weight: bold;
     font-size: 0.9em; }
   .menu-card_plat:hover i {
-    width: 20%;
+    width: 6rem;
     color: white;
     -webkit-transition: 1s;
     -o-transition: 1s;
