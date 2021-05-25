@@ -168,6 +168,54 @@ img {
         cursor: pointer;
     }
 }
+
+@keyframes effets-plats {
+    0% {
+        opacity: 0%;
+        transform: translateY(20px);
+    }
+    50% {
+        opacity: 0%;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 100%;
+        transform: translateY(0);
+    }
+}
+
+// .menu-container :nth-of-type(1)[class="menu-card"] :nth-of-type(1)[class="menu-card_plat"] {
+//     background-color: red;
+// } 
+
+// .menu-container :nth-of-type(1)[class="menu-card"] {
+//     animation: effets-plats 1s;
+// }
+// .menu-container :nth-of-type(2)[class="menu-card"] {
+//     animation: effets-plats 2s;
+// }
+// .menu-container :nth-of-type(3)[class="menu-card"] {
+//     animation: effets-plats 3s;
+// }
+
+// @for $i from 1 to 4 {
+//     .menu-container :nth-of-type(#{$i})[class="menu-card"] {
+//         animation: effets-plats #{$i / 2}s;
+//     }
+// }
+
+$i: 1;
+$k: 1;
+@for $count from 1 to 20 {
+    .menu-container :nth-of-type(#{$k})[class="menu-card"] :nth-of-type(#{$i})[class="menu-card_plat"] {
+        animation: effets-plats #{($k + ($i / 3))}s;
+        $i: $i + 1;
+        @if ($i > 4) {
+            $k: $k + 1;
+            $i: 1;
+        }
+    }
+}
 /*
     CATEGORIE PLAT + LISTE
 ***********/

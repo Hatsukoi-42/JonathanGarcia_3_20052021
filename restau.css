@@ -167,6 +167,110 @@ img {
     font-size: 1.3rem;
     cursor: pointer; }
 
+@-webkit-keyframes effets-plats {
+  0% {
+    opacity: 0%;
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px); }
+  50% {
+    opacity: 0%;
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px); }
+  100% {
+    opacity: 100%;
+    -webkit-transform: translateY(0);
+    transform: translateY(0); } }
+
+@keyframes effets-plats {
+  0% {
+    opacity: 0%;
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px); }
+  50% {
+    opacity: 0%;
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px); }
+  100% {
+    opacity: 100%;
+    -webkit-transform: translateY(0);
+    transform: translateY(0); } }
+
+.menu-container :nth-of-type(1)[class="menu-card"] :nth-of-type(1)[class="menu-card_plat"] {
+  -webkit-animation: effets-plats 1.33333s;
+  animation: effets-plats 1.33333s; }
+
+.menu-container :nth-of-type(1)[class="menu-card"] :nth-of-type(2)[class="menu-card_plat"] {
+  -webkit-animation: effets-plats 1.66667s;
+  animation: effets-plats 1.66667s; }
+
+.menu-container :nth-of-type(1)[class="menu-card"] :nth-of-type(3)[class="menu-card_plat"] {
+  -webkit-animation: effets-plats 2s;
+  animation: effets-plats 2s; }
+
+.menu-container :nth-of-type(1)[class="menu-card"] :nth-of-type(4)[class="menu-card_plat"] {
+  -webkit-animation: effets-plats 2.33333s;
+  animation: effets-plats 2.33333s; }
+
+.menu-container :nth-of-type(2)[class="menu-card"] :nth-of-type(1)[class="menu-card_plat"] {
+  -webkit-animation: effets-plats 2.33333s;
+  animation: effets-plats 2.33333s; }
+
+.menu-container :nth-of-type(2)[class="menu-card"] :nth-of-type(2)[class="menu-card_plat"] {
+  -webkit-animation: effets-plats 2.66667s;
+  animation: effets-plats 2.66667s; }
+
+.menu-container :nth-of-type(2)[class="menu-card"] :nth-of-type(3)[class="menu-card_plat"] {
+  -webkit-animation: effets-plats 3s;
+  animation: effets-plats 3s; }
+
+.menu-container :nth-of-type(2)[class="menu-card"] :nth-of-type(4)[class="menu-card_plat"] {
+  -webkit-animation: effets-plats 3.33333s;
+  animation: effets-plats 3.33333s; }
+
+.menu-container :nth-of-type(3)[class="menu-card"] :nth-of-type(1)[class="menu-card_plat"] {
+  -webkit-animation: effets-plats 3.33333s;
+  animation: effets-plats 3.33333s; }
+
+.menu-container :nth-of-type(3)[class="menu-card"] :nth-of-type(2)[class="menu-card_plat"] {
+  -webkit-animation: effets-plats 3.66667s;
+  animation: effets-plats 3.66667s; }
+
+.menu-container :nth-of-type(3)[class="menu-card"] :nth-of-type(3)[class="menu-card_plat"] {
+  -webkit-animation: effets-plats 4s;
+  animation: effets-plats 4s; }
+
+.menu-container :nth-of-type(3)[class="menu-card"] :nth-of-type(4)[class="menu-card_plat"] {
+  -webkit-animation: effets-plats 4.33333s;
+  animation: effets-plats 4.33333s; }
+
+.menu-container :nth-of-type(4)[class="menu-card"] :nth-of-type(1)[class="menu-card_plat"] {
+  -webkit-animation: effets-plats 4.33333s;
+  animation: effets-plats 4.33333s; }
+
+.menu-container :nth-of-type(4)[class="menu-card"] :nth-of-type(2)[class="menu-card_plat"] {
+  -webkit-animation: effets-plats 4.66667s;
+  animation: effets-plats 4.66667s; }
+
+.menu-container :nth-of-type(4)[class="menu-card"] :nth-of-type(3)[class="menu-card_plat"] {
+  -webkit-animation: effets-plats 5s;
+  animation: effets-plats 5s; }
+
+.menu-container :nth-of-type(4)[class="menu-card"] :nth-of-type(4)[class="menu-card_plat"] {
+  -webkit-animation: effets-plats 5.33333s;
+  animation: effets-plats 5.33333s; }
+
+.menu-container :nth-of-type(5)[class="menu-card"] :nth-of-type(1)[class="menu-card_plat"] {
+  -webkit-animation: effets-plats 5.33333s;
+  animation: effets-plats 5.33333s; }
+
+.menu-container :nth-of-type(5)[class="menu-card"] :nth-of-type(2)[class="menu-card_plat"] {
+  -webkit-animation: effets-plats 5.66667s;
+  animation: effets-plats 5.66667s; }
+
+.menu-container :nth-of-type(5)[class="menu-card"] :nth-of-type(3)[class="menu-card_plat"] {
+  -webkit-animation: effets-plats 6s;
+  animation: effets-plats 6s; }
+
 /*
     CATEGORIE PLAT + LISTE
 ***********/
