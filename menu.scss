@@ -30,15 +30,12 @@ $color-grey: #353535;
 */
 @keyframes loader-scroll {
     0% {
-        height: 100vh;
         overflow: hidden;
     }
     99% {
-        height: 100vh;
         overflow: hidden;
     }
     100% {
-        height: auto;
         overflow: inherit;
     }
 }
