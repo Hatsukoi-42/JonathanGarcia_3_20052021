@@ -1,9 +1,3 @@
-@-webkit-keyframes heart {
-  from {
-    opacity: 0%; }
-  to {
-    opacity: 100%; } }
-
 @keyframes heart {
   from {
     opacity: 0%; }
@@ -32,8 +26,6 @@ img {
   .menu-container h3 {
     display: inline-block; }
   .menu-container > i {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     float: right;
     padding-right: 1rem;
@@ -42,35 +34,20 @@ img {
     -webkit-text-stroke-color: black;
     color: transparent; }
     .menu-container > i:hover {
-      background: -webkit-gradient(linear, left bottom, right top, from(#FF79DA), to(#9356DC));
-      background: -webkit-linear-gradient(bottom left, #FF79DA 0%, #9356DC 100%);
-      background: -o-linear-gradient(bottom left, #FF79DA 0%, #9356DC 100%);
       background: linear-gradient(to top right, #FF79DA 0%, #9356DC 100%);
-      -webkit-background-clip: text;
       background-clip: text;
-      -webkit-animation: heart 1s;
       animation: heart 1s;
       -webkit-text-stroke-width: 0; }
   .menu-container button {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
     height: 3rem;
     width: 10rem;
     margin: 2rem auto;
-    -webkit-box-shadow: #bbbbbb 0 0.3em 0.5em;
     box-shadow: #bbbbbb 0 0.3em 0.5em;
     border: none;
     border-radius: 2rem;
-    background: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
-    background: -webkit-linear-gradient(top left, #FF79DA 0%, #9356DC 100%);
-    background: -o-linear-gradient(top left, #FF79DA 0%, #9356DC 100%);
     background: linear-gradient(to bottom right, #FF79DA 0%, #9356DC 100%);
     cursor: pointer;
     color: white;
@@ -78,10 +55,7 @@ img {
     font-weight: 500; }
     .menu-container button:hover {
       opacity: 85%;
-      -webkit-box-shadow: #979797 0 0.3em 0.5em;
       box-shadow: #979797 0 0.3em 0.5em;
-      -webkit-transition: opacity 0.5s;
-      -o-transition: opacity 0.5s;
       transition: opacity 0.5s; }
 
 /*
@@ -105,14 +79,11 @@ img {
     border-bottom: #99E2D0 solid 3px; }
 
 .menu-card_plat {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   font-size: 1rem;
   margin-top: 0.7em;
   background-color: white;
   border-radius: 1rem;
-  -webkit-box-shadow: #e6e6e6 0 0.3em 0.5em;
   box-shadow: #e6e6e6 0 0.3em 0.5em; }
   .menu-card_plat div {
     position: relative;
@@ -120,26 +91,18 @@ img {
     padding: 0.7em 0.6em;
     white-space: nowrap;
     overflow: hidden;
-    -o-text-overflow: ellipsis;
     text-overflow: ellipsis; }
     .menu-card_plat div h4 {
       font-weight: 600;
       overflow: hidden;
-      -o-text-overflow: ellipsis;
       text-overflow: ellipsis; }
     .menu-card_plat div span {
       display: inline;
       font-size: 0.9em;
       font-weight: 400; }
   .menu-card_plat strong {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: end;
-    -ms-flex-pack: end;
     justify-content: flex-end;
-    -webkit-box-align: end;
-    -ms-flex-align: end;
     align-items: flex-end;
     padding: 0 1em 0.7em;
     font-weight: bold;
@@ -147,19 +110,11 @@ img {
   .menu-card_plat:hover i, .menu-card_plat:focus i {
     width: 6rem;
     color: white;
-    -webkit-transition: 1s;
-    -o-transition: 1s;
     transition: 1s; }
   .menu-card_plat i {
     width: 0%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
     border-radius: 0 1rem 1rem 0;
     background-color: #99E2D0;
@@ -167,80 +122,51 @@ img {
     font-size: 1.3rem;
     cursor: pointer; }
 
-@-webkit-keyframes effets-plats {
-  0% {
-    opacity: 0%;
-    -webkit-transform: translateY(20px);
-    transform: translateY(20px); }
-  50% {
-    opacity: 0%;
-    -webkit-transform: translateY(20px);
-    transform: translateY(20px); }
-  100% {
-    opacity: 100%;
-    -webkit-transform: translateY(0);
-    transform: translateY(0); } }
-
 @keyframes effets-plats {
   0% {
     opacity: 0%;
-    -webkit-transform: translateY(20px);
     transform: translateY(20px); }
   50% {
     opacity: 0%;
-    -webkit-transform: translateY(20px);
     transform: translateY(20px); }
   100% {
     opacity: 100%;
-    -webkit-transform: translateY(0);
     transform: translateY(0); } }
 
 .menu-container :nth-of-type(1)[class="menu-card"] :nth-of-type(1)[class="menu-card_plat"] {
-  -webkit-animation: effets-plats 1.33333s;
   animation: effets-plats 1.33333s; }
 
 .menu-container :nth-of-type(1)[class="menu-card"] :nth-of-type(2)[class="menu-card_plat"] {
-  -webkit-animation: effets-plats 1.66667s;
   animation: effets-plats 1.66667s; }
 
 .menu-container :nth-of-type(1)[class="menu-card"] :nth-of-type(3)[class="menu-card_plat"] {
-  -webkit-animation: effets-plats 2s;
   animation: effets-plats 2s; }
 
 .menu-container :nth-of-type(1)[class="menu-card"] :nth-of-type(4)[class="menu-card_plat"] {
-  -webkit-animation: effets-plats 2.33333s;
   animation: effets-plats 2.33333s; }
 
 .menu-container :nth-of-type(2)[class="menu-card"] :nth-of-type(1)[class="menu-card_plat"] {
-  -webkit-animation: effets-plats 2.33333s;
   animation: effets-plats 2.33333s; }
 
 .menu-container :nth-of-type(2)[class="menu-card"] :nth-of-type(2)[class="menu-card_plat"] {
-  -webkit-animation: effets-plats 2.66667s;
   animation: effets-plats 2.66667s; }
 
 .menu-container :nth-of-type(2)[class="menu-card"] :nth-of-type(3)[class="menu-card_plat"] {
-  -webkit-animation: effets-plats 3s;
   animation: effets-plats 3s; }
 
 .menu-container :nth-of-type(2)[class="menu-card"] :nth-of-type(4)[class="menu-card_plat"] {
-  -webkit-animation: effets-plats 3.33333s;
   animation: effets-plats 3.33333s; }
 
 .menu-container :nth-of-type(3)[class="menu-card"] :nth-of-type(1)[class="menu-card_plat"] {
-  -webkit-animation: effets-plats 3.33333s;
   animation: effets-plats 3.33333s; }
 
 .menu-container :nth-of-type(3)[class="menu-card"] :nth-of-type(2)[class="menu-card_plat"] {
-  -webkit-animation: effets-plats 3.66667s;
   animation: effets-plats 3.66667s; }
 
 .menu-container :nth-of-type(3)[class="menu-card"] :nth-of-type(3)[class="menu-card_plat"] {
-  -webkit-animation: effets-plats 4s;
   animation: effets-plats 4s; }
 
 .menu-container :nth-of-type(3)[class="menu-card"] :nth-of-type(4)[class="menu-card_plat"] {
-  -webkit-animation: effets-plats 4.33333s;
   animation: effets-plats 4.33333s; }
 
 /*
@@ -251,13 +177,8 @@ img {
 */
 @media only screen and (min-width: 1000px) {
   .menu-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
     justify-content: space-between; }
     .menu-container h3 {
       width: 95%; }

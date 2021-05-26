@@ -24,6 +24,10 @@ html {
     font-family: "Roboto" ,sans-serif;
     font-weight: 300;
 }
+body {
+    max-width: 1400px;
+    margin: 0 auto;
+}
 
 h2 {    /*Police Primaire*/ 
     font-size: 1.5rem;
