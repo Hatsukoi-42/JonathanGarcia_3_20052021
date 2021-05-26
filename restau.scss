@@ -25,16 +25,16 @@ $color-grey: #353535;
 }
 
 
-/***********
-    IMAGE PRINCIPALE
-*/
-img {
-    width: 100%;
-    height: 15rem;
-}
-/*
-    IMAGE PRINCIPALE
-***********/
+/*********** 
+    IMAGE PRINCIPALE 
+*/ 
+img { 
+    width: 100%; 
+    height: 15rem; 
+} 
+/* 
+    IMAGE PRINCIPALE 
+***********/ 
 
 
 /***********
@@ -207,7 +207,7 @@ img {
 
 $i: 1;
 $k: 1;
-@for $count from 1 to 20 {
+@for $count from 1 to 13 {
     .menu-container :nth-of-type(#{$k})[class="menu-card"] :nth-of-type(#{$i})[class="menu-card_plat"] {
         animation: effets-plats #{($k + ($i / 3))}s;
         $i: $i + 1;
@@ -219,4 +219,16 @@ $k: 1;
 }
 /*
     CATEGORIE PLAT + LISTE
+***********/
+
+
+/***********
+    TABLETTE
+*/
+@media only screen and (min-width: 600) {
+    
+
+}
+/*
+    TABLETTE
 ***********/
