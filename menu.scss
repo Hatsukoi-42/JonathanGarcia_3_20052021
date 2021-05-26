@@ -168,7 +168,8 @@ $color-grey: #353535;
     }
 
     button {
-        margin-bottom: 1.5rem;
+        display: block;
+        margin: 0 auto 1.5rem; 
         padding: 1em 1.5em;
         box-shadow: #bbbbbb 0 0.3em 0.5em;
         border: none;
@@ -301,4 +302,48 @@ $color-grey: #353535;
 
 /*
     RESTAURANTS
+***********/
+
+
+/***********
+    TABLETTE
+*/
+@media screen and (min-width: 600px) {
+    
+    .fonctionnement {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        
+        & > h2 {
+            width: 100%;
+        }
+        & > div {
+            width: 28%;
+
+            i {
+                display: flex;
+                align-items: center;
+                position: initial;
+                padding-left: 0.2em;
+            }
+            p {
+                padding-left: 0.8em;
+            }
+        }
+    }
+
+    .restaurants {
+
+        img {
+            height: 20rem;
+        }
+        i {
+            bottom: 9%;
+        }
+    }
+    
+}
+/*
+    TABLETTE
 ***********/

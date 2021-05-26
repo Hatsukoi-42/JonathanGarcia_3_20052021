@@ -168,7 +168,8 @@
     display: inline-block;
     padding: 0.9em 0 1.8em; }
   .exploration button {
-    margin-bottom: 1.5rem;
+    display: block;
+    margin: 0 auto 1.5rem;
     padding: 1em 1.5em;
     -webkit-box-shadow: #bbbbbb 0 0.3em 0.5em;
     box-shadow: #bbbbbb 0 0.3em 0.5em;
@@ -303,4 +304,40 @@
 
 /*
     RESTAURANTS
+***********/
+/***********
+    TABLETTE
+*/
+@media screen and (min-width: 600px) {
+  .fonctionnement {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+    .fonctionnement > h2 {
+      width: 100%; }
+    .fonctionnement > div {
+      width: 28%; }
+      .fonctionnement > div i {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        position: initial;
+        padding-left: 0.2em; }
+      .fonctionnement > div p {
+        padding-left: 0.8em; }
+  .restaurants img {
+    height: 20rem; }
+  .restaurants i {
+    bottom: 9%; } }
+
+/*
+    TABLETTE
 ***********/
