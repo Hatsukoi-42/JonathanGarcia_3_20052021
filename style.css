@@ -2,11 +2,13 @@
 header img {
   width: auto;
   height: auto;
+  -o-object-fit: inherit;
   object-fit: inherit; }
 
 img {
   width: 100px;
   height: 100px;
+  -o-object-fit: cover;
   object-fit: cover; }
 
 /***********
@@ -43,11 +45,17 @@ h4 {
     HEADER
 */
 header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   position: relative;
   height: 4rem;
   width: 100%;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center; }
   header a {
     position: absolute;
@@ -92,6 +100,8 @@ footer {
       content: "\f4c4";
       font-size: 0.8em;
       top: 50%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
       transform: translateY(-50%); }
 
 /*

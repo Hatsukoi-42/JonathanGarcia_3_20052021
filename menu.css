@@ -1,3 +1,9 @@
+@-webkit-keyframes heart {
+  from {
+    opacity: 0%; }
+  to {
+    opacity: 100%; } }
+
 @keyframes heart {
   from {
     opacity: 0%; }
@@ -7,6 +13,13 @@
 /***********
     LOADER
 */
+@-webkit-keyframes loader-scroll {
+  0% {
+    overflow: hidden; }
+  99% {
+    overflow: hidden; }
+  100% {
+    overflow: inherit; } }
 @keyframes loader-scroll {
   0% {
     overflow: hidden; }
@@ -16,7 +29,19 @@
     overflow: inherit; } }
 
 .loader-scroll {
+  -webkit-animation: loader-scroll 3s;
   animation: loader-scroll 3s; }
+
+@-webkit-keyframes loader-opacity {
+  0% {
+    opacity: 90%;
+    z-index: 5; }
+  99% {
+    opacity: 90%;
+    z-index: 5; }
+  100% {
+    opacity: 0%;
+    z-index: -1; } }
 
 @keyframes loader-opacity {
   0% {
@@ -29,28 +54,50 @@
     opacity: 0%;
     z-index: -1; } }
 
-@keyframes loader-spin {
+@-webkit-keyframes loader-spin {
   0% {
+    -webkit-transform: rotate(0deg);
     transform: rotate(0deg); }
   100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+
+@keyframes loader-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
     transform: rotate(360deg); } }
 
 .loader-container * {
+  -webkit-box-sizing: content-box;
   box-sizing: content-box; }
 
 .loader-container {
+  -webkit-animation: loader-opacity 3s both;
   animation: loader-opacity 3s both;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   position: fixed;
   left: 0;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   height: 100%;
   width: 100%;
   background-color: white;
   z-index: 5; }
   .loader-container span {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     font-size: 1.5rem;
     font-weight: bold;
@@ -72,6 +119,7 @@
       border: lightgrey solid 6px; }
       .loader-container span .loader-quart:after {
         content: "";
+        -webkit-animation: loader-spin 1s linear 0s infinite;
         animation: loader-spin 1s linear 0s infinite;
         position: absolute;
         top: -6px;
@@ -91,6 +139,8 @@
     LOCALISATION
 */
 .localisation {
+  background: -webkit-linear-gradient(top, #afafaf, 1px, #EAEAEA);
+  background: -o-linear-gradient(top, #afafaf, 1px, #EAEAEA);
   background: linear-gradient(to bottom, #afafaf, 1px, #EAEAEA);
   padding: 1rem 0;
   text-align: center; }
@@ -123,15 +173,22 @@
     display: block;
     margin: 0 auto 1.5rem;
     padding: 1em 1.5em;
+    -webkit-box-shadow: #bbbbbb 0 0.3em 0.5em;
     box-shadow: #bbbbbb 0 0.3em 0.5em;
     border: none;
     border-radius: 2em;
+    background: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), color-stop(50%), to(#9356DC));
+    background: -webkit-linear-gradient(top left, #FF79DA, 50%, #9356DC);
+    background: -o-linear-gradient(top left, #FF79DA, 50%, #9356DC);
     background: linear-gradient(to bottom right, #FF79DA, 50%, #9356DC);
     color: white;
     cursor: pointer; }
     .exploration button:hover {
       opacity: 85%;
+      -webkit-box-shadow: #979797 0 0.3em 0.5em;
       box-shadow: #979797 0 0.3em 0.5em;
+      -webkit-transition: opacity 0.5s;
+      -o-transition: opacity 0.5s;
       transition: opacity 0.5s; }
 
 /*
@@ -146,29 +203,42 @@
   .fonctionnement h2 {
     margin-bottom: 2rem; }
   .fonctionnement div {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     position: relative;
     margin: 0.5em 0 0.5em 1em;
     border-radius: 1.3em;
     padding: 1.5em;
     background-color: #F6F6F6;
+    -webkit-box-shadow: #dcdcdc 0 0.3em 0.5em;
     box-shadow: #dcdcdc 0 0.3em 0.5em; }
     .fonctionnement div:hover {
       background-color: #F5EDFF; }
       .fonctionnement div:hover i {
         color: #9356DC; }
     .fonctionnement div span {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
       position: absolute;
       left: -10px;
       top: 50%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
       transform: translateY(-50%);
       height: 1.5rem;
       width: 1.5rem;
       border-radius: 1rem;
       background-color: #9356DC;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
       justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
       align-items: center;
       color: white; }
     .fonctionnement div i {
@@ -194,6 +264,7 @@
 .restau_container {
   overflow: hidden;
   position: relative;
+  -webkit-box-shadow: #dcdcdc 0 0.3em 0.5em;
   box-shadow: #dcdcdc 0 0.3em 0.5em;
   border-radius: 1em;
   background-color: white;
@@ -202,6 +273,7 @@
   .restau_container img {
     height: 10rem;
     width: 100%;
+    -o-object-position: 0% 70%;
     object-position: 0% 70%; }
   .restau_container strong {
     position: absolute;
@@ -225,8 +297,13 @@
     -webkit-text-stroke-color: black;
     color: transparent; }
     .restau_container i:hover {
+      background: -webkit-gradient(linear, left bottom, right top, from(#FF79DA), to(#9356DC));
+      background: -webkit-linear-gradient(bottom left, #FF79DA 0%, #9356DC 100%);
+      background: -o-linear-gradient(bottom left, #FF79DA 0%, #9356DC 100%);
       background: linear-gradient(to top right, #FF79DA 0%, #9356DC 100%);
+      -webkit-background-clip: text;
       background-clip: text;
+      -webkit-animation: heart 1s;
       animation: heart 1s;
       -webkit-text-stroke-width: 0; }
 
@@ -254,30 +331,47 @@
   html {
     font-size: 18px; }
   .fonctionnement {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between; }
     .fonctionnement > h2 {
       width: 100%; }
     .fonctionnement > div {
       width: 30%; }
       .fonctionnement > div i {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
         position: initial;
         padding-left: 0.2em; }
       .fonctionnement > div p {
         padding-left: 0.8em; }
   .restaurants {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between; }
     .restaurants h2 {
       width: 100%; }
     .restaurants .restau_container {
       width: 46%; }
   footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     text-align: center; }
     footer h5 {
