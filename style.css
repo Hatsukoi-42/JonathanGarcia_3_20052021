@@ -1,16 +1,3 @@
-/*TMP*/
-header img {
-  width: auto;
-  height: auto;
-  -o-object-fit: inherit;
-  object-fit: inherit; }
-
-img {
-  width: 100px;
-  height: 100px;
-  -o-object-fit: cover;
-  object-fit: cover; }
-
 /***********
     GLOBAL
 */
@@ -24,19 +11,26 @@ body {
 
 h2 {
   /*Police Primaire*/
+  font-size: 24px;
   font-size: 1.5rem;
   font-weight: 700; }
 
 h3 {
   /*Police Secondaire*/
+  font-size: 24px;
   font-size: 1.5rem;
   font-weight: 500;
   font-family: "Shrikhand", serif; }
 
 h4 {
   /*Texte*/
+  font-size: 17.6px;
   font-size: 1.1rem;
   font-weight: 800; }
+
+img {
+  -o-object-fit: cover;
+  object-fit: cover; }
 
 /*
     GLOBAL
@@ -49,6 +43,7 @@ header {
   display: -ms-flexbox;
   display: flex;
   position: relative;
+  height: 64px;
   height: 4rem;
   width: 100%;
   -webkit-box-pack: center;
@@ -61,11 +56,14 @@ header {
     position: absolute;
     left: 5%; }
     header a i {
+      font-size: 20.8px;
       font-size: 1.3rem;
       color: #353535; }
   header img {
     height: 80%;
-    width: 45%; }
+    width: 45%;
+    -o-object-fit: initial;
+    object-fit: initial; }
 
 /*
     HEADER
@@ -80,6 +78,7 @@ footer {
   footer h5 {
     padding-bottom: 0.8em;
     font-family: "Shrikhand", serif;
+    font-size: 17.6px;
     font-size: 1.1rem; }
   footer a {
     display: block;
@@ -101,7 +100,6 @@ footer {
       font-size: 0.8em;
       top: 50%;
       -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
       transform: translateY(-50%); }
 
 /*

@@ -99,6 +99,7 @@
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    font-size: 24px;
     font-size: 1.5rem;
     font-weight: bold;
     opacity: 100%; }
@@ -110,6 +111,7 @@
       height: 50px;
       border: lightgrey solid 6px;
       border-radius: 50px;
+      margin-right: 16px;
       margin-right: 1rem; }
     .loader-container span .loader-quart {
       position: relative;
@@ -139,14 +141,14 @@
     LOCALISATION
 */
 .localisation {
-  background: -webkit-linear-gradient(top, #afafaf, 1px, #EAEAEA);
-  background: -o-linear-gradient(top, #afafaf, 1px, #EAEAEA);
   background: linear-gradient(to bottom, #afafaf, 1px, #EAEAEA);
+  padding: 16px 0;
   padding: 1rem 0;
   text-align: center; }
   .localisation span {
     font-weight: 500; }
     .localisation span i {
+      padding-right: 16px;
       padding-right: 1rem;
       color: #353535; }
 
@@ -157,6 +159,7 @@
     EXPLORATION
 */
 .exploration {
+  font-size: 16px;
   font-size: 1rem;
   padding: 2em 10%;
   background-color: #F6F6F6;
@@ -169,8 +172,10 @@
     display: inline-block;
     padding: 0.9em 0 1.8em; }
   .exploration button {
+    font-size: 16px;
     font-size: 1rem;
     display: block;
+    margin: 0 auto 24px;
     margin: 0 auto 1.5rem;
     padding: 1em 1.5em;
     -webkit-box-shadow: #bbbbbb 0 0.3em 0.5em;
@@ -178,8 +183,6 @@
     border: none;
     border-radius: 2em;
     background: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), color-stop(50%), to(#9356DC));
-    background: -webkit-linear-gradient(top left, #FF79DA, 50%, #9356DC);
-    background: -o-linear-gradient(top left, #FF79DA, 50%, #9356DC);
     background: linear-gradient(to bottom right, #FF79DA, 50%, #9356DC);
     color: white;
     cursor: pointer; }
@@ -188,7 +191,6 @@
       -webkit-box-shadow: #979797 0 0.3em 0.5em;
       box-shadow: #979797 0 0.3em 0.5em;
       -webkit-transition: opacity 0.5s;
-      -o-transition: opacity 0.5s;
       transition: opacity 0.5s; }
 
 /*
@@ -198,9 +200,11 @@
     FONCTIONNEMENT
 */
 .fonctionnement {
+  font-size: 16px;
   font-size: 1rem;
   padding: 3em 5%; }
   .fonctionnement h2 {
+    margin-bottom: 32px;
     margin-bottom: 2rem; }
   .fonctionnement div {
     display: -webkit-box;
@@ -228,9 +232,10 @@
       left: -10px;
       top: 50%;
       -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
       transform: translateY(-50%);
+      height: 24px;
       height: 1.5rem;
+      width: 24px;
       width: 1.5rem;
       border-radius: 1rem;
       background-color: #9356DC;
@@ -243,6 +248,7 @@
       color: white; }
     .fonctionnement div i {
       font-size: 1.1em;
+      width: 32px;
       width: 2rem;
       padding-left: 0.5em;
       color: grey; }
@@ -257,8 +263,10 @@
     RESTAURANTS
 */
 .restaurants {
+  padding: 48px 5%;
   padding: 3rem 5%;
   background-color: #F3F3F3;
+  font-size: 16px;
   font-size: 1rem; }
 
 .restau_container {
@@ -271,6 +279,7 @@
   margin: 1em 0;
   padding-bottom: 1em; }
   .restau_container img {
+    height: 160px;
     height: 10rem;
     width: 100%;
     -o-object-position: 0% 70%;
@@ -287,6 +296,7 @@
   .restau_container h4 {
     padding: 0.7em 0 0.2em 1em; }
   .restau_container span {
+    padding-left: 16px;
     padding-left: 1rem; }
   .restau_container i {
     position: absolute;
@@ -298,8 +308,6 @@
     color: transparent; }
     .restau_container i:hover {
       background: -webkit-gradient(linear, left bottom, right top, from(#FF79DA), to(#9356DC));
-      background: -webkit-linear-gradient(bottom left, #FF79DA 0%, #9356DC 100%);
-      background: -o-linear-gradient(bottom left, #FF79DA 0%, #9356DC 100%);
       background: linear-gradient(to top right, #FF79DA 0%, #9356DC 100%);
       -webkit-background-clip: text;
       background-clip: text;
@@ -350,6 +358,7 @@
         -webkit-box-align: center;
         -ms-flex-align: center;
         align-items: center;
+        position: static;
         position: initial;
         padding-left: 0.2em; }
       .fonctionnement > div p {
@@ -380,6 +389,7 @@
     footer a {
       width: 25%; }
       footer a::before {
+        position: static;
         position: initial;
         padding-right: 0.7em; } }
 

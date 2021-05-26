@@ -1,3 +1,9 @@
+@-webkit-keyframes heart {
+  from {
+    opacity: 0%; }
+  to {
+    opacity: 100%; } }
+
 @keyframes heart {
   from {
     opacity: 0%; }
@@ -9,6 +15,7 @@
 */
 img {
   width: 100%;
+  height: 240px;
   height: 15rem; }
 
 /* 
@@ -19,6 +26,7 @@ img {
 */
 .menu-container {
   position: relative;
+  margin-top: -32px;
   margin-top: -2rem;
   border-radius: 2rem 2rem 0 0;
   background-color: #F6F6F6;
@@ -26,28 +34,46 @@ img {
   .menu-container h3 {
     display: inline-block; }
   .menu-container > i {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     float: right;
+    padding-right: 16px;
     padding-right: 1rem;
+    cursor: pointer;
     font-size: 1.5em;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black;
     color: transparent; }
     .menu-container > i:hover {
+      background: -webkit-gradient(linear, left bottom, right top, from(#FF79DA), to(#9356DC));
       background: linear-gradient(to top right, #FF79DA 0%, #9356DC 100%);
+      -webkit-background-clip: text;
       background-clip: text;
-      animation: heart 1s;
+      -webkit-animation: heart 1s;
+              animation: heart 1s;
       -webkit-text-stroke-width: 0; }
   .menu-container button {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 48px;
     height: 3rem;
+    width: 160px;
     width: 10rem;
+    margin: 32px auto;
     margin: 2rem auto;
-    box-shadow: #bbbbbb 0 0.3em 0.5em;
+    -webkit-box-shadow: #bbbbbb 0 0.3em 0.5em;
+            box-shadow: #bbbbbb 0 0.3em 0.5em;
     border: none;
     border-radius: 2rem;
+    background: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
     background: linear-gradient(to bottom right, #FF79DA 0%, #9356DC 100%);
     cursor: pointer;
     color: white;
@@ -55,7 +81,9 @@ img {
     font-weight: 500; }
     .menu-container button:hover {
       opacity: 85%;
-      box-shadow: #979797 0 0.3em 0.5em;
+      -webkit-box-shadow: #979797 0 0.3em 0.5em;
+              box-shadow: #979797 0 0.3em 0.5em;
+      -webkit-transition: opacity 0.5s;
       transition: opacity 0.5s; }
 
 /*
@@ -68,6 +96,7 @@ img {
   position: relative;
   margin-top: 1.8em;
   font-weight: 400;
+  font-size: 16px;
   font-size: 1rem;
   padding-bottom: 0.4em; }
   .menu-card h2::before {
@@ -79,12 +108,16 @@ img {
     border-bottom: #99E2D0 solid 3px; }
 
 .menu-card_plat {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  font-size: 16px;
   font-size: 1rem;
   margin-top: 0.7em;
   background-color: white;
   border-radius: 1rem;
-  box-shadow: #e6e6e6 0 0.3em 0.5em; }
+  -webkit-box-shadow: #e6e6e6 0 0.3em 0.5em;
+          box-shadow: #e6e6e6 0 0.3em 0.5em; }
   .menu-card_plat div {
     position: relative;
     width: 100%;
@@ -101,73 +134,117 @@ img {
       font-size: 0.9em;
       font-weight: 400; }
   .menu-card_plat strong {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
     padding: 0 1em 0.7em;
     font-weight: bold;
     font-size: 0.9em; }
   .menu-card_plat:hover i, .menu-card_plat:focus i {
+    width: 96px;
     width: 6rem;
     color: white;
+    -webkit-transition: 1s;
     transition: 1s; }
   .menu-card_plat i {
     width: 0%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     border-radius: 0 1rem 1rem 0;
     background-color: #99E2D0;
     color: transparent;
+    font-size: 20.8px;
     font-size: 1.3rem;
     cursor: pointer; }
+
+@-webkit-keyframes effets-plats {
+  0% {
+    opacity: 0%;
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px); }
+  50% {
+    opacity: 0%;
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px); }
+  100% {
+    opacity: 100%;
+    -webkit-transform: translateY(0);
+            transform: translateY(0); } }
 
 @keyframes effets-plats {
   0% {
     opacity: 0%;
-    transform: translateY(20px); }
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px); }
   50% {
     opacity: 0%;
-    transform: translateY(20px); }
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px); }
   100% {
     opacity: 100%;
-    transform: translateY(0); } }
+    -webkit-transform: translateY(0);
+            transform: translateY(0); } }
 
 .menu-container :nth-of-type(1)[class="menu-card"] :nth-of-type(1)[class="menu-card_plat"] {
-  animation: effets-plats 1.33333s; }
+  -webkit-animation: effets-plats 1.33333s;
+          animation: effets-plats 1.33333s; }
 
 .menu-container :nth-of-type(1)[class="menu-card"] :nth-of-type(2)[class="menu-card_plat"] {
-  animation: effets-plats 1.66667s; }
+  -webkit-animation: effets-plats 1.66667s;
+          animation: effets-plats 1.66667s; }
 
 .menu-container :nth-of-type(1)[class="menu-card"] :nth-of-type(3)[class="menu-card_plat"] {
-  animation: effets-plats 2s; }
+  -webkit-animation: effets-plats 2s;
+          animation: effets-plats 2s; }
 
 .menu-container :nth-of-type(1)[class="menu-card"] :nth-of-type(4)[class="menu-card_plat"] {
-  animation: effets-plats 2.33333s; }
+  -webkit-animation: effets-plats 2.33333s;
+          animation: effets-plats 2.33333s; }
 
 .menu-container :nth-of-type(2)[class="menu-card"] :nth-of-type(1)[class="menu-card_plat"] {
-  animation: effets-plats 2.33333s; }
+  -webkit-animation: effets-plats 2.33333s;
+          animation: effets-plats 2.33333s; }
 
 .menu-container :nth-of-type(2)[class="menu-card"] :nth-of-type(2)[class="menu-card_plat"] {
-  animation: effets-plats 2.66667s; }
+  -webkit-animation: effets-plats 2.66667s;
+          animation: effets-plats 2.66667s; }
 
 .menu-container :nth-of-type(2)[class="menu-card"] :nth-of-type(3)[class="menu-card_plat"] {
-  animation: effets-plats 3s; }
+  -webkit-animation: effets-plats 3s;
+          animation: effets-plats 3s; }
 
 .menu-container :nth-of-type(2)[class="menu-card"] :nth-of-type(4)[class="menu-card_plat"] {
-  animation: effets-plats 3.33333s; }
+  -webkit-animation: effets-plats 3.33333s;
+          animation: effets-plats 3.33333s; }
 
 .menu-container :nth-of-type(3)[class="menu-card"] :nth-of-type(1)[class="menu-card_plat"] {
-  animation: effets-plats 3.33333s; }
+  -webkit-animation: effets-plats 3.33333s;
+          animation: effets-plats 3.33333s; }
 
 .menu-container :nth-of-type(3)[class="menu-card"] :nth-of-type(2)[class="menu-card_plat"] {
-  animation: effets-plats 3.66667s; }
+  -webkit-animation: effets-plats 3.66667s;
+          animation: effets-plats 3.66667s; }
 
 .menu-container :nth-of-type(3)[class="menu-card"] :nth-of-type(3)[class="menu-card_plat"] {
-  animation: effets-plats 4s; }
+  -webkit-animation: effets-plats 4s;
+          animation: effets-plats 4s; }
 
 .menu-container :nth-of-type(3)[class="menu-card"] :nth-of-type(4)[class="menu-card_plat"] {
-  animation: effets-plats 4.33333s; }
+  -webkit-animation: effets-plats 4.33333s;
+          animation: effets-plats 4.33333s; }
 
 /*
     CATEGORIE PLAT + LISTE
@@ -177,9 +254,14 @@ img {
 */
 @media only screen and (min-width: 1000px) {
   .menu-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between; }
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
     .menu-container h3 {
       width: 95%; }
     .menu-container .menu-card {

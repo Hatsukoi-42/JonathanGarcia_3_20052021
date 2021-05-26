@@ -18,12 +18,12 @@ $color-grey: #353535;
     color: transparent;
     &:hover {
         background: linear-gradient(to top right, $color-secondary 0%,$color-primary 100%);
+        -webkit-background-clip: text;
         background-clip: text;
         animation: heart 1s;
         -webkit-text-stroke-width: 0;
     }
 }
-
 
 /*********** 
     IMAGE PRINCIPALE 
@@ -55,6 +55,7 @@ img {
         display: flex;
         float: right;
         padding-right: 1rem;
+        cursor: pointer;
         @include heart;
     }
 
