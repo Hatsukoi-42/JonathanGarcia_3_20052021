@@ -168,6 +168,7 @@ $color-grey: #353535;
     }
 
     button {
+        font-size: 1rem;
         display: block;
         margin: 0 auto 1.5rem; 
         padding: 1em 1.5em;
@@ -202,6 +203,7 @@ $color-grey: #353535;
 
     div {
         display: flex;
+        align-items: center;
         position: relative;
         margin: 0.5em 0 0.5em 1em;
         border-radius: 1.3em;
@@ -232,14 +234,16 @@ $color-grey: #353535;
         }
 
         i {
-            position: absolute;
-            left: 2.2em;
+            // position: absolute;
+            // left: 2.2em;
             font-size: 1.1em;
+            width: 2rem;
+            padding-left: 0.5em;
             color: grey;
         }
 
         p {
-            padding-left: 4em;
+            padding-left: 0.6em;
             font-weight: 500;
         }
     }
@@ -308,8 +312,39 @@ $color-grey: #353535;
 /***********
     TABLETTE
 */
-@media screen and (min-width: 600px) {
+@media only screen and (min-width: 600px) {
+
+    .restaurants {
+        .restau_container {
+            a {
+                img {
+                    height: 15rem;
+                }
+                i {
+                    bottom: 12%;
+                }
+                strong {
+                    font-size: 1.3em;
+                } 
+            }
+        }
+    }
     
+}
+/*
+    TABLETTE
+***********/
+
+
+/***********
+    DESKTOP
+*/
+@media only screen and (min-width: 1000px) {
+    
+    html {
+        font-size: 18px;
+    }
+
     .fonctionnement {
         display: flex;
         flex-wrap: wrap;
@@ -319,7 +354,7 @@ $color-grey: #353535;
             width: 100%;
         }
         & > div {
-            width: 28%;
+            width: 30%;
 
             i {
                 display: flex;
@@ -334,16 +369,36 @@ $color-grey: #353535;
     }
 
     .restaurants {
-
-        img {
-            height: 20rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        h2 {
+            width: 100%;
         }
-        i {
-            bottom: 9%;
+        .restau_container {
+            width: 46%;
         }
     }
-    
+
+    footer {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+
+        h5 {
+            width: 100%;
+            font-size: 1.5em;
+        }
+        a {
+            width: 25%;
+            &::before {
+                position: initial;
+                padding-right: 0.7em;
+            }
+        }
+    }
+
 }
 /*
-    TABLETTE
+    DESKTOP
 ***********/

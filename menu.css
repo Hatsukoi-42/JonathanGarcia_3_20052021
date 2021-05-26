@@ -168,6 +168,7 @@
     display: inline-block;
     padding: 0.9em 0 1.8em; }
   .exploration button {
+    font-size: 1rem;
     display: block;
     margin: 0 auto 1.5rem;
     padding: 1em 1.5em;
@@ -204,6 +205,9 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
     position: relative;
     margin: 0.5em 0 0.5em 1em;
     border-radius: 1.3em;
@@ -237,12 +241,12 @@
       align-items: center;
       color: white; }
     .fonctionnement div i {
-      position: absolute;
-      left: 2.2em;
       font-size: 1.1em;
+      width: 2rem;
+      padding-left: 0.5em;
       color: grey; }
     .fonctionnement div p {
-      padding-left: 4em;
+      padding-left: 0.6em;
       font-weight: 500; }
 
 /*
@@ -308,7 +312,23 @@
 /***********
     TABLETTE
 */
-@media screen and (min-width: 600px) {
+@media only screen and (min-width: 600px) {
+  .restaurants .restau_container a img {
+    height: 15rem; }
+  .restaurants .restau_container a i {
+    bottom: 12%; }
+  .restaurants .restau_container a strong {
+    font-size: 1.3em; } }
+
+/*
+    TABLETTE
+***********/
+/***********
+    DESKTOP
+*/
+@media only screen and (min-width: 1000px) {
+  html {
+    font-size: 18px; }
   .fonctionnement {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -321,7 +341,7 @@
     .fonctionnement > h2 {
       width: 100%; }
     .fonctionnement > div {
-      width: 28%; }
+      width: 30%; }
       .fonctionnement > div i {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -333,11 +353,35 @@
         padding-left: 0.2em; }
       .fonctionnement > div p {
         padding-left: 0.8em; }
-  .restaurants img {
-    height: 20rem; }
-  .restaurants i {
-    bottom: 9%; } }
+  .restaurants {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+    .restaurants h2 {
+      width: 100%; }
+    .restaurants .restau_container {
+      width: 46%; }
+  footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    text-align: center; }
+    footer h5 {
+      width: 100%;
+      font-size: 1.5em; }
+    footer a {
+      width: 25%; }
+      footer a::before {
+        position: initial;
+        padding-right: 0.7em; } }
 
 /*
-    TABLETTE
+    DESKTOP
 ***********/
