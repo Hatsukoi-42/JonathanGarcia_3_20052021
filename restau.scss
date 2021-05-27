@@ -156,6 +156,10 @@ img {
             width: 6rem;
             color: white;
             transition: 1s;
+            &::before {
+                transform: rotate(0deg);
+                transition: transform 1s;
+            }
         }
     }
     i {
@@ -168,6 +172,9 @@ img {
         color: transparent;
         font-size: 1.3rem;
         cursor: pointer;
+        &::before {
+            transform: rotate(360deg);
+        }
     }
 }
 

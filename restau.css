@@ -152,6 +152,13 @@ img {
     color: white;
     -webkit-transition: 1s;
     transition: 1s; }
+    .menu-card_plat:hover i::before, .menu-card_plat:focus i::before {
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
+      -webkit-transition: -webkit-transform 1s;
+      transition: -webkit-transform 1s;
+      transition: transform 1s;
+      transition: transform 1s, -webkit-transform 1s; }
   .menu-card_plat i {
     width: 0%;
     display: -webkit-box;
@@ -169,6 +176,9 @@ img {
     font-size: 20.8px;
     font-size: 1.3rem;
     cursor: pointer; }
+    .menu-card_plat i::before {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg); }
 
 @-webkit-keyframes effets-plats {
   0% {
