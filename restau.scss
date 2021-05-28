@@ -193,26 +193,6 @@ img {
     }
 }
 
-// .menu-container :nth-of-type(1)[class="menu-card"] :nth-of-type(1)[class="menu-card_plat"] {
-//     background-color: red;
-// } 
-
-// .menu-container :nth-of-type(1)[class="menu-card"] {
-//     animation: effets-plats 1s;
-// }
-// .menu-container :nth-of-type(2)[class="menu-card"] {
-//     animation: effets-plats 2s;
-// }
-// .menu-container :nth-of-type(3)[class="menu-card"] {
-//     animation: effets-plats 3s;
-// }
-
-// @for $i from 1 to 4 {
-//     .menu-container :nth-of-type(#{$i})[class="menu-card"] {
-//         animation: effets-plats #{$i / 2}s;
-//     }
-// }
-
 $i: 1;
 $k: 1;
 @for $count from 1 to 13 {
@@ -251,7 +231,6 @@ $k: 1;
         }
     }
     
-
 }
 /*
     DESKTOP
